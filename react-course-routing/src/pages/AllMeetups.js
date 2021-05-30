@@ -19,12 +19,11 @@ const AllMeetups = () => {
         for (const key in data) {
           const meetup = {
             id: key,
-            ...data[key]
+            ...data[key],
           };
 
           meetups.push(meetup);
         }
-
 
         setIsLoading(false);
         setLoadedMeetups(meetups);
